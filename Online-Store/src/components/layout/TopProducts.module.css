@@ -1,0 +1,25 @@
+.TopProducts_container{
+    margin-top: 35px;
+    width: 100%;
+    height: 120vh;
+    background-color: #efefef;
+}
+
+.TopProducts_tittle{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+    background-color: #efefef;
+}
+
+
+.wrapper {
+   width: 60%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-column-gap: 30px;
+   grid-row-gap: 3em;
+}
+

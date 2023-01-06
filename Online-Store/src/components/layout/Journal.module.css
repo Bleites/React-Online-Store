@@ -1,0 +1,31 @@
+.section_container{
+    width: 100%;
+    height: 130vh;
+    background-color: white;
+    padding-top: 70px;
+    border: 10px solid yellow;
+}
+
+.container{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    background-color: yellow;
+    border: 2px solid red;
+    height: 80vh;
+    margin: auto;
+}
+
+.full_notice{
+    width: 48%;
+    border: 1px solid blue;
+    margin-right: 2% ;
+}
+
+.small_notice{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 48%;
+    grid-gap: 2%;
+}
+

@@ -1,0 +1,123 @@
+.slider {
+    height: 85vh;
+    background-color: #F3F3F3;
+    position: relative;
+  }
+  
+  .slider_slides {
+    height: 85vh;
+    position: relative;
+  }
+  
+  .slider_slides_slide {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 85vh;
+    overflow: hidden;
+  }
+  
+  .slider_slides_slide img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slider_slides_slide_caption {
+    width: 100%;
+    height: 85vh;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .button_slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+  }
+  
+  @media (min-width: 750px) {
+    .slider_slides_slide_caption {
+      padding-left: 55vw;
+      padding-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .slider_slides_slide_caption {
+      padding-left: 60vw;
+      padding-right: 30px;
+    }
+  }
+  
+  .slider_slides_slide_caption .h1 {
+    font-size: 3rem;
+    color: #FFF;
+    margin-bottom: 30px;
+  }
+  
+  .slider_slides_slide_caption a {
+    display: inline-block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #FFF;
+  }
+  
+  .slider_slides_slide_caption a:hover {
+    border-bottom-color: #747474;
+  }
+  
+  .slider_next, .slider_previous {
+    display: none;
+  }
+  
+  @media (min-width: 750px) {
+    .slider_next, .slider_previous {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: calc(42.5vh - 45px);
+      width: 60px;
+      line-height: 90px;
+      height: 90px;
+      font-size: 3rem;
+      text-align: center;
+      background-color: #747474;
+      color: #FFF;
+    }
+    .slider_next i, .slider_previous i {
+      line-height: 90px;
+    }
+    .slider_next:hover, .slider_previous:hover {
+      background-color: #FFF;
+      color: #747474;
+      width: 90px;
+    }
+  }
+  
+  .slider_next {
+    right: 0;
+    border-radius: 45px 0 0 45px;
+  }
+  
+  .slider_previous {
+    left: 0;
+    border-radius: 0 45px 45px 0;
+  }

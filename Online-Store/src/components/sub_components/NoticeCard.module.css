@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+}
+
+.fancytext{
+    color: grey;
+    text-decoration: overline;
+    cursor: pointer;
+}
+
+.fancytext:hover {
+    color: black;
+}
+
+.img_container{
+    width: 100%;
+}
