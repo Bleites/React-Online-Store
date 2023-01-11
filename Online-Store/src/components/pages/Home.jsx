@@ -3,7 +3,10 @@ import NavBar from "../layout/NavBar"
 import BannerSlider from "../layout/BannerSlider"
 import TopProducts from "../layout/TopProducts"
 import About from "../layout/About"
-import Journal from "../layout/Journal"
+import JournalSection from "../layout/JournalSection"
+import Looks from "../layout/looks"
+import Press from "../layout/Press"
+import TalkingAboutUs from "../layout/TalkingAboutUs"
 
 function Home () {
     return(
@@ -13,7 +16,10 @@ function Home () {
         <BannerSlider />
         <TopProducts />
         <About />
-        <Journal />
+        <JournalSection />
+        <Looks />
+        <Press />
+        <TalkingAboutUs />
         </>
     )
 }

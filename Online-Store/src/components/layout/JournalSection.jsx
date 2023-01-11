@@ -1,10 +1,13 @@
-import styles from './Journal.module.css'
+import styles from './JournalSection.module.css'
 
 import NoticeCard from '../sub_components/NoticeCard'
+import LinkButton from '../sub_components/LinkButton'
 
-function Journal () {
+function JournalSection () {
     return(
         <div className={styles.section_container}>
+
+            <h2>Journal</h2>
 
             <div className={styles.container}>
 
@@ -18,11 +21,13 @@ function Journal () {
                 <NoticeCard className={styles.notice_4} />
                 <NoticeCard className={styles.notice_5} />
                 </div>
-
+                    
             </div>
+            <LinkButton exact to="/journal" text="See the journal" />
+                
 
         </div>
     )
 }
 
-export default Journal
+export default JournalSection

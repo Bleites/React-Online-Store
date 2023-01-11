@@ -1,0 +1,23 @@
+.product_card{
+    box-sizing: border-box;
+}
+
+.product_card_img{
+    width: 150px;
+    height: 150px;
+    background: #8F869B;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.product_card_img:hover{
+    opacity: 1;
+}
+
+/* .product_card p{
+    margin-top: 10px;
+} */
+
+.product_price_tag{
+    color: rgb(237, 195, 8);
+}

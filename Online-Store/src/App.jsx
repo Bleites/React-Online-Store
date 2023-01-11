@@ -6,6 +6,8 @@ import ProductList from './components/pages/ProductList'
 
 import ShippPub from './components/layout/ShippPub'
 import NavBar from './components/layout/NavBar'
+import Journal from './components/pages/Journal'
+import Footer from './components/layout/Footer'
 
 function App() {
 
@@ -18,10 +20,11 @@ function App() {
               {/* <Route path="/projects" element={<Projects />} /> */}
               <Route path="/product" element={<Product />} />
               <Route path="/productlist" element={<ProductList />} />
+              <Route path="/journal" element={<Journal/>} />
               {/* <Route path="/newproject" element={<NewProject />} />
               <Route path="/project/:id" element={<Project />} /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
     </Router>
   )
 }
