@@ -41,7 +41,7 @@ function TopProducts () {
 
             <div className={styles.wrapper}>
                 {products && products.map((product) => (
-                    <ProductCard image={product.image} description={"product.description"} category={product.category} price={product.price} />)
+                    <ProductCard image={product.image} description={product.name} category={product.category} price={product.price} />)
                 )}
                 {/* <ProductCard img={"text"} description="Black and Purple Run Sneakers" category="Shoes" price={213} /> */}
                 {/* <ProductCard img={"text"} description="Black and Purple Run Sneakers" category="Shoes" price={213} />

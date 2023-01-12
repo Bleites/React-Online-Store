@@ -25,7 +25,7 @@ function NavBar () {
                     </li>
 
                     <li className={styles.item}>
-                    <a href="/">Journal <span><FaAngleDown/></span></a>
+                    <a href="/journal">Journal <span><FaAngleDown/></span></a>
                     </li>
 
                     <li className={styles.item}>
