@@ -2,6 +2,7 @@
     display: flex;
     margin: auto;
     width: 100%;
+    padding-top: 35px;
 }
 
 .container_banner{
@@ -10,14 +11,19 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.grid_container{
-    width: 50%;
+.asidebar{
+    width: 30%;
+    min-height: 100%;
+    border: 1px solid red;
+}
+
+.grid_products_container{
+    width: 60%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
     grid-row-gap: 1em;
-    height: 100%;
 }
 
 .loader{
@@ -46,6 +52,7 @@
     border: 1px solid #ffbb33;
     border-radius: 5px;
 }
+
 
 
 

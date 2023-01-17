@@ -1,5 +1,29 @@
 .container{
     background-color: white;
-    border-bottom: 1px dashed black;
+    box-shadow: 1px 4px 5px 0px #897988;
     text-align: center;
+    width: 100%;
+    margin: auto;
+    height: 75px;
+    display: flex;
 }
+
+.filter_container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fancy_text{
+    /* text-transform: uppercase; */
+    font-size: 1em;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.select_container{
+    padding: 5px;
+    font-size: 0.9em;
+}
+
