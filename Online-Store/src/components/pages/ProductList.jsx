@@ -1,6 +1,7 @@
 import ProductCard from '../products/ProductCard';
 import BannerProductList from '../layout/BannerProductList';
 import FilterProduct from '../FilterProduct/FilterProduct';
+import { FaAngleRight, FaAngleDown, FaAngleUp} from "react-icons/fa"
 
 import loadingImg from '../imgs/loading.svg';
 // import fullBanner from '../imgs/slider/slider01-medium.jpg'
@@ -73,82 +74,89 @@ function ProductList() {
 	}, [limit, size, category, sortBy]);
 
 	return (
-		<>
+		<div className={styles.body}>
 			<BannerProductList />
 			{/* // sort by */}
 			<FilterProduct handlerSort={handlerSort}/>
 
 			<div className={styles.container}>
 
-            <div className={styles.asidebar}>
-                    {/* <p onClick={() => setCategory(2)}>Clicar para setar por categorias</p> */}
-                    <h3>Filters</h3>
-                    <br />
-                    <div className={styles.filters_container}>
-                        <button className={styles.dropdown_btn}>Tops</button>
-                        <div  className={styles.dropdown_container}>
-                            <a href="#">Jackets</a>
-                            <a href="#">Sweaters</a>
-                            <a href="#">Shirts</a>
-                            <a href="#">Tees</a>
-                            <a href="#">Polos</a>
-                        </div>
+                    <div className={styles.asidebar_container}>
+                        {/* <p onClick={() => setCategory(2)}>Clicar para setar por categorias</p> */}
+                        <h3 className={styles.asidebar_title}>Filters</h3>
 
-                        <h2>Bottoms</h2>
-                        <h2>Bags</h2>
+                        <div className={styles.filters_container}>
+                                <br />
+                                <h3 className={styles.fa_icons}>Tops<span><FaAngleDown/></span></h3>
+                            <div  className={styles.dropdown_container}>
+                                <a href="#"><span><FaAngleRight/></span>Jackets</a>
 
-                        <h2>Shoes</h2>
-                        <ul>
-                            <li><a href="#">Sneakers</a></li>
-                            <li><a href="#">Boots</a></li>
-                            <li><a href="#">Flip-Flops</a></li>
-                        </ul>
-                    </div>
-                    <br />
+                                <a href="#"><span><FaAngleRight/></span>Sweaters</a>
 
-                    {/* container dos butoes de tamanho */}
-                    <div className={styles.container_column}>
-                        <p>Sizes</p>
-                            <div className={styles.container_flex}>
-                                {/* butoes de tamanho */}
-                                <div className={styles.size_btn}
-                                    value="1"
-                                    onClick={(event) => {
-                                        handlerSize(event.target.innerText);
-                                    }}
-                                >
-                                    1
-                                </div>
-                                {/* butoes de tamanho */}
-                                <div className={styles.size_btn}
-                                    value="2"
-                                    onClick={(event) => {
-                                        handlerSize(event.target.innerText);
-                                    }}
-                                >
-                                    2
-                                </div>
-                                {/* butoes de tamanho */}
-                                <div className={styles.size_btn}
-                                    value="3"
-                                    onClick={(event) => {
-                                        handlerSize(event.target.innerText);
-                                    }}
-                                >
-                                    3
-                                </div>
-                                {/* butoes de tamanho */}
-                                <div className={styles.size_btn}
-                                    value="4"
-                                    onClick={(event) => {
-                                        handlerSize(event.target.innerText);
-                                    }}
-                                >
-                                    4
-                                </div>
+                                <a href="#"><span><FaAngleRight/></span>Shirts</a>
+
+                                <a href="#"><span><FaAngleRight/></span>Tees</a>
+
+                                <a href="#"><span><FaAngleRight/></span>Polos</a>
                             </div>
-                        <p>See our sizing guide</p>
-                    </div>
+
+                            <h3 className={styles.fa_icons}>Bottoms<span><FaAngleDown/></span></h3>
+                            <h3 className={styles.fa_icons}>Bags<span><FaAngleDown/></span></h3>
+                            <h3 className={styles.fa_icons}>Shoes<span><FaAngleDown/></span></h3>
+                            <div>
+                                <a href="#"><span><FaAngleRight/></span>Sneakers</a>
+
+                                <a href="#"><span><FaAngleRight/></span>Boots</a>
+
+                                <a href="#"><span><FaAngleRight/></span>Flip-Flops</a>
+
+                            </div>
+                        </div>
+                        <br />
+
+                        {/* container dos butoes de tamanho */}
+                        <div>
+                            <p>- Sizes</p>
+                                <div className={styles.btn_container_flex}>
+                                    {/* butoes de tamanho */}
+                                    <div className={styles.size_btn}
+                                        value="1"
+                                        onClick={(event) => {
+                                            handlerSize(event.target.innerText);
+                                        }}
+                                    >
+                                        1
+                                    </div>
+                                    {/* butoes de tamanho */}
+                                    <div className={styles.size_btn}
+                                        value="2"
+                                        onClick={(event) => {
+                                            handlerSize(event.target.innerText);
+                                        }}
+                                    >
+                                        2
+                                    </div>
+                                    {/* butoes de tamanho */}
+                                    <div className={styles.size_btn}
+                                        value="3"
+                                        onClick={(event) => {
+                                            handlerSize(event.target.innerText);
+                                        }}
+                                    >
+                                        3
+                                    </div>
+                                    {/* butoes de tamanho */}
+                                    <div className={styles.size_btn}
+                                        value="4"
+                                        onClick={(event) => {
+                                            handlerSize(event.target.innerText);
+                                        }}
+                                    >
+                                        4
+                                    </div>
+                                </div>
+                            <p>See our sizing guide</p>
+                        </div>
                     </div>
                 
                 {/* div dos produtos */}
@@ -176,7 +184,7 @@ function ProductList() {
 				<img className={styles.loader} src={loadingImg} alt="loading button" />
 				Load More
 			</button>
-		</>
+		</div>
 	);
 }
 

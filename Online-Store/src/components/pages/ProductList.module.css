@@ -1,33 +1,95 @@
-.container{
-    display: flex;
-    margin: auto;
-    width: 100%;
-    padding-top: 35px;
+.body{
+    background-color: white;
 }
 
+/* container da pagina */
+.container{
+    padding-top: 35px;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 20px;
+}
+
+/* container do banner */
 .container_banner{
     min-width: 100%;
     max-height: 70%;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.asidebar{
-    width: 30%;
-    min-height: 100%;
-    border: 1px solid red;
+/* container da sidebar */
+.container li, a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: black;
+    transition: 0.5s;
+    display: block;
+    margin: 10px;
 }
 
+.container a:hover, li:hover{
+    color:#ffbb33;
+}
+
+/* side bar css */
+.asidebar_container{
+
+}
+
+.asidebar_container h3{
+    margin-bottom: 10px;
+
+}
+
+.filters_container{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 370px;
+}
+
+.fa_icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* grid dos produtos de fetch */
 .grid_products_container{
-    width: 60%;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 30px;
     grid-row-gap: 1em;
 }
 
+
+/* botões de size */
+.btn_container_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+}
+
+.size_btn{
+    border: 1px solid black;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.size_btn:hover{
+    color: #ffbb33;
+    border: 1px solid #ffbb33;
+}
+
+
+
+/* botão de laoding */
 .loader{
     width: 20px;
+    background-color: white;
 }
 
 .button_load{
@@ -41,16 +103,17 @@
     transition: 0.5s;
     border: none;
     cursor: pointer;
-    margin-top: 25px;
-    margin-bottom: 25px;
     border: 0px solid #ffbb33;
     border-radius: 5px;
+    margin-top: 25px;
+    background-color: white;
 }
 
 .button_load:hover{
     color: #ffbb33;
     border: 1px solid #ffbb33;
     border-radius: 5px;
+    background-color: white;
 }
 
 

@@ -3,6 +3,7 @@
     justify-content: space-around;
     background-color: white;
     padding: 1em;
+    box-shadow: 1px 4px 5px 0px #897988;
 }
 
 .list {

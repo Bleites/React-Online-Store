@@ -35,7 +35,7 @@ function NavBar () {
 
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                    <a href="/">Login</a>
+                    <a href="/login">Login</a>
                     </li>
 
                     <li className={styles.item}>
