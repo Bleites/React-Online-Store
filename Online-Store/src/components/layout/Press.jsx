@@ -18,7 +18,6 @@ function Press () {
                 <CardPress img={press2} text='texto 2'  />
                 <CardPress img={press3} text='texto 3'  />
             </div>
-            <LinkButton exact to="/product" text="See more"/>
         </div>
     )
 }

@@ -1,8 +1,7 @@
 .container{
     width: 100%;
-    background-color: #efefef;
     text-align: center;
-    height: 60vh;
+    height: 55vh;
 }
 
 .container h2{
@@ -16,7 +15,7 @@
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-column-gap: 2%;
-    margin-bottom: 75px;
+    /* padding-bottom: 75px; */
 }
 
 .grid_container img {

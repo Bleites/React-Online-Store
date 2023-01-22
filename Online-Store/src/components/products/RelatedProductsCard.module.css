@@ -1,11 +1,14 @@
 .product_card{
     box-sizing: border-box;
+    margin: auto;
+    padding-bottom: 25px;
 }
 
 .product_card_img{
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     background: #8F869B;
+    background-color: #8F869B;
     opacity: 0.8;
     border-radius: 5px;
 }
@@ -21,4 +24,3 @@
 .product_price_tag{
     color: #FFBB33;
 }
-
