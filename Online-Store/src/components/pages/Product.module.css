@@ -1,0 +1,110 @@
+.main_content{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.grid_container{
+    padding-top: 35px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18% 38% 40%;
+    grid-column-gap: 20px;
+}
+
+.grid_container div{
+    border: 1px solid red;
+}
+
+.product_details_container p{
+    border-bottom: 1px solid grey;
+    margin: 10px 0px;
+}
+
+/* .product_details_container h3, p, span{
+    border-bottom: 1px solid grey;
+} */
+
+.description_text{
+    color: grey;
+    width: 50%;
+}
+
+.name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.price{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFBB33;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big_image{
+    width: 400px;
+    height: 500px;
+}
+
+.social_list{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social_list_item{
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.social_list_item:hover{
+    color: #ffbb33;
+}
+
+/* botões de size */
+.btn_container_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+    color: grey;
+}
+
+.size_btn{
+    border: 1px solid black;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.size_btn:hover{
+    color: #ffbb33;
+    border: 1px solid #ffbb33;
+}
+
+.container_btns_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.cart_btn{
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.cart_btn:hover{
+    color: #FFBB33;
+}
+
+
