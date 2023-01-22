@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 1px 4px 5px 0px #897988;
+    padding: 20px 0px;
+}
+
+.sub_container{
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}

@@ -14,6 +14,7 @@ import Looks from '../layout/Looks';
 import Reviews from '../layout/Reviews';
 import RelatedProducts from '../layout/RelatedProducts';
 import RelatedProductsCard from '../products/RelatedProductsCard';
+import BreadCrumbs from '../layout/BreadCrumbs';
 
 import { Link } from 'react-router-dom';
 
@@ -56,6 +57,8 @@ function Product() {
 		<div className={styles.body}>
 			{/* para irmos vendo o iD */}
 			{/* <h1>{id}</h1> */}
+
+			<BreadCrumbs />
 
 			<div className={styles.top_content}>
 				{product && (
