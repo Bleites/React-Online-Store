@@ -5,6 +5,7 @@
     text-decoration: none;
     transition: 0.5s;
     text-transform: uppercase;
+    display: inline;
 }
 
 .btn:hover{

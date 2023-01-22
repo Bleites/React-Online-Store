@@ -16,7 +16,7 @@ function RelatedProducts() {
 				)
 					.then((resp) => resp.json())
 					.then((data) => data.data.products);
-				console.log(productDetails);
+
 				setProducts(productDetails);
 			} catch (error) {}
 		}

@@ -30,7 +30,6 @@ function Product() {
 	const [size, setSize] = useState();
 
 	const handlerSize = (newSize) => {
-		console.log('size: ', newSize);
 		if (newSize !== size) {
 			setSize(newSize);
 		}
@@ -44,11 +43,8 @@ function Product() {
 				)
 					.then((response) => response.json())
 					.then((data) => data);
-				console.log(productInfo);
 				setProduct(productInfo);
-			} catch (error) {
-				console.log(error.message);
-			}
+			} catch (error) {}
 		}
 		getProduct();
 	}, [id]);

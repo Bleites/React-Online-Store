@@ -1,7 +1,7 @@
 import styles from './FilterProduct.module.css';
 
 function FilterProduct(props) {
-	console.log(props);
+	
 	return (
 		<div className={styles.container}>
 			<div className={styles.filter_container}>

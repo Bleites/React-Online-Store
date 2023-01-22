@@ -34,7 +34,6 @@ function ProductList() {
 
 	//função para quando o novo tamanho for diferente de tamanhao ele setar um novo fetch por novo tamanho escolhido;
 	const handlerSize = (newSize) => {
-		console.log('size: ', newSize);
 		if (newSize !== size) {
 			setSize(newSize);
 		}
@@ -71,7 +70,6 @@ function ProductList() {
 				)
 					.then((resp) => resp.json())
 					.then((data) => data.data.products);
-				console.log(productDetails);
 				setProducts(productDetails);
 			} catch (error) {}
 		}
@@ -233,14 +231,14 @@ function ProductList() {
 
 					{products &&
 						products.map((product) => (
-							<Link exact to={`/product/${product.id}`}>
+							<Link to={`/product/${product.id}`}>
 								<ProductCard
 									image={product.image}
 									description={product.name}
 									category={product.category}
 									price={product.price}
-                                    key={product.id}
-                                    id={product.id}
+									key={product.id}
+									id={product.id}
 								/>
 							</Link>
 						))}
